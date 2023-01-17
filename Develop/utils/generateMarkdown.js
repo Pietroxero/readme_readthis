@@ -15,7 +15,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ## Table of contents
 - [Project description](#Description)
--[Usage](#Usage)
+- [Usage](#Usage)
 - [Contributing](#Contributing)
 - [Installation](#Installation)
 - [Questions](#Questions)
@@ -30,7 +30,7 @@ ${data.usage}
 ## Installation
 ${data.installation}
 
-## Contributing
+## Testing
 ${data.contributing}
 
 ## Questions

@@ -1,5 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const Markdown = require('./utils');
+const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -57,12 +60,20 @@ const questions = [
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
-    .then((answers)=>{
-        console.log(answers)
-        return answers
+    .then((data)=>{
+        const mark =Markdown.generateMarkdown(data)
+        console.log(data)
+        fs.writeFile('README.md', mark, function(err){
+            if(err){
+                console.log('unable to save file', err)
+            } else {
+                console.log('Your file has been created')
+            }
+        })
+        return data
     })
-    .catch((error)=>{
-console.log(error)
+    .catch((err)=>{
+console.log(err)
     })
 }
 

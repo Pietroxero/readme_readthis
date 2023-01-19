@@ -85,6 +85,7 @@ const init = () => {
     userPrompt()
     //writeFile method imported from fs.promises to use promises instead of
     // a callback function
+    // this was changed from function to const based on an in class mini project example
     // QUESTION TO GRADING TEAM, if I used line 88 instead of 89 where the readme file name is take and used from user input would I have gotten marked down for
     // not having the file name be called generic README.md?
     .then((data) => writeFile(`${data.name}.md`, generateMarkdown(data)))

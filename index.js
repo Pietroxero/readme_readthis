@@ -14,42 +14,6 @@ return inquirer.prompt([
         name: 'name',
         message: 'What is the name of your repo?',
     },
-    
-    {
-        type: 'input',
-        name: 'title',
-        message: 'What will your Project title be?',
-    },
-    {
-        type: 'input',
-        name: 'description',
-        message: 'Please describe what your project aims to do',
-    },
-    {
-        type: 'input',
-        name: 'installation',
-        message: 'What are the steps required to install your project? Please provide a step-by-step description of how to get the development environment running.',
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'Provide instructions and examples for use.',
-    },
-    {
-        type: 'input',
-        name: 'contribution',
-        message: 'List of collaborators',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'Enter your email:',
-    },
-    {
-        type: 'input',
-        name: 'github',
-        message: 'Enter your GitHub username:',
-    },
     {
         type: 'list',
         name: 'license',
@@ -61,11 +25,48 @@ return inquirer.prompt([
             {value: 'None'},
         ]
         },
-        {
+    
+    {
+        type: 'input',
+        name: 'title',
+        message: 'Does the Project have a title?',
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Please describe what your project aims to do.',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the steps required to install your project? Walk me through it.',
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for use.',
+    },
+    {
         type: 'input',
         name: 'test',
         message: 'How did you test this Project?',
         },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'List your collaborators',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email:',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub username:',
+    },
+    
         {
             type: 'input',
         name: 'deployed',

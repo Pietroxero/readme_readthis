@@ -12,7 +12,7 @@ return inquirer.prompt([
     {
         type: 'input',
         name: 'name',
-        message: 'What is the name of your repo?',
+        message: 'What is the name of your repo? (this will also be the title of the readme file)',
     },
     {
         type: 'list',
@@ -29,7 +29,7 @@ return inquirer.prompt([
     {
         type: 'input',
         name: 'title',
-        message: 'Does the Project have a title?',
+        message: 'Project title?',
     },
     {
         type: 'input',
@@ -39,12 +39,12 @@ return inquirer.prompt([
     {
         type: 'input',
         name: 'installation',
-        message: 'What are the steps required to install your project? Walk me through it.',
+        message: 'How do I install this project? Walk me through it.',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use.',
+        message: 'Provide instructions for use.',
     },
     {
         type: 'input',
@@ -87,8 +87,8 @@ const init = () => {
     // a callback function
     // QUESTION TO GRADING TEAM, if I used line 88 instead of 89 where the readme file name is take and used from user input would I have gotten marked down for
     // not having the file name be called generic README.md?
-    //.then((data) => writeFile(`${data.name}.md`, generateMarkdown(data)))
-    .then((data) => writeFile("README.md", generateMarkdown(data)))
+    .then((data) => writeFile(`${data.name}.md`, generateMarkdown(data)))
+    //.then((data) => writeFile("README.md", generateMarkdown(data)))
     .then(() => console.log('Thank you very much! Your Readme is now ready'))
     .catch((err) => console.error(err));
 }

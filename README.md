@@ -42,6 +42,6 @@ in the readme. Once the questions are answered the readme will be generated with
 ## Deployment
 Repo: (https://github.com/Pietroxero/readme_readthis)
 
-Video Link: https://drive.google.com/file/d/1fn1qg_5HMp5_IwinZzf9nTrXpeD-4acs/view
+Video Link: https://drive.google.com/file/d/1Xy_uQjP9RrblfmcOxZomvZNmhgBHGI_h/view
 
 
